@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<section class="section">
+    <ul class="nav">
+        <li class="bg">
+            {{scene.title}}
+        </li>
+        <li>
+            {{life.title}}
+        </li>
+        <li>
+            {{Beauty.title}}
+        </li>
+    </ul>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <ion-scroll>
+                    <div class="content">
+                        <dl ng-repeat="item in scene.info">
+                            <dt>
+                                <img ng-src="{{item.img}}" alt=""/>
+                            </dt>
+                            <dd>
+                                <srrong>{{item.text}}</srrong>
+                            </dd>
+                        </dl>
+                    </div>
+                </ion-scroll>
+            </div>
+            <div class="swiper-slide">
+                <div class="content">
+                    <dl ng-repeat="item in life.info">
+                        <dt>
+                            <img ng-src="{{item.img}}" alt=""/>
+                        </dt>
+                        <dd>
+                            <srrong>{{item.text}}</srrong>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="content">
+                    <dl ng-repeat="item in Beauty.info">
+                        <dt>
+                            <img ng-src="{{item.img}}" alt=""/>
+                        </dt>
+                        <dd>
+                            <srrong>{{item.text}}</srrong>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
