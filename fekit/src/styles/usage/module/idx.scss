@@ -1,0 +1,52 @@
+.header {
+  background-color: #11C442;
+  position: relative;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  span i {
+    font-size: 18px;
+  }
+  .f1 i {
+    float: left;
+    line-height: 44px;
+    margin-left: 3%;
+  }
+  .f2 {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+  }
+  .f2 i {
+    line-height: 44px;
+  }
+  ul {
+    width: 40%;
+    display: -webkit-flex;
+    flex: 1;
+    background-color: #3ACF64;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 6px 30%;
+    height: 32px;
+    li {
+      line-height: 32px;
+      text-align: center;
+      flex: 1;
+    }
+    .lis {
+      background-color: #64D986;
+    }
+  }
+}
+.section{
+  position: absolute;
+  left: 0;
+  top: 44px;
+  bottom: 44px;
+  width: 100%;
+}
+

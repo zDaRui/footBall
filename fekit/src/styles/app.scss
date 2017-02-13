@@ -1,0 +1,21 @@
+
+@import "./lib/core/reset.scss";
+@import "./usage/common/common.css";
+@import "./usage/module/index.scss";
+@import "./usage/module/home.scss";
+@import "./usage/module/idx.scss";
+@import "./usage/module/hot.scss";
+@import "./usage/module/care.scss";
+@import "./lib/swiper.min.css";
+html,body{
+  width: 100%;
+  height: 100%;
+  @include overflow();
+}
+
+/*
+@font-face{
+  font-family: yofont;
+  src:url("../../iconfont/iconfont.woff") format("woff"),
+  url("../../iconfont/iconfont.ttf") format("truetype");
+}*/

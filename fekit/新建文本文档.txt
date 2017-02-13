@@ -1,0 +1,42 @@
+一、创建Fekit项目
+1、fekit init  初始化
+2、输入项目名称
+3、输入版本号
+说明：输入fekit init projectName用于创建一个文件夹，即fekit初始化项目
+二、把已有的项目转化为Fekit项目
+1、输入cd 目录进入转化的fekit项目目录
+2、输入fekit init回车
+三、config配置信息
+1、compiler:
+项目开发时用modular;组件开发时用component
+2、dependencies:依赖的组件、库
+3、alias:目录别名
+4、export:
+需要打包导出的js、css等静态文件列表
+四、如何通过fekit搭建本地开发环境调试
+1、通过fekit创建一个http服:输入fekit server
+在后面输入-p 端口号用来设置端口号
+2、通过fekit server --help来查看fekit server的所有参数
+3、fekit server -n
+让fekit忽略是否在fekit.config的export中配置了入口文件
+说明：通过fekit启动多个服务时，需配置端口号
+五、模块化开发
+模块化简介
+模块定义：一个文件就是一个模块，每个模块都有单独的作用域
+模块输出：通过module.exports公开方法或属性
+模块加载：使用require("模块路径")方法引用模块
+通过module.exports=的形式或是exports.属性或方法的形式向外暴漏
+模块化简介 AMD
+1、AMD注重解决两个问题：
+(1)、模块之间的依赖关系
+(2)、模块的异步加载
+2、CMD
+说明：fekit是基于node.js开发的，node.js采用的是common.js
+六、fekit.config配置参数
+1、在export种设置入口文件
+2、在alias中设置别名
+说明：在引用时扩展名可省略不写，/可以写为.
+3、在index.html中引用的js文件为入口文件，需要在config的export中进行配置，这样在
+fekit编译时才能找到这些文件，其他的JS是通过require导入进来的，不需要在export中
+进行定义。
+六、组件管理

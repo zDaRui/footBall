@@ -1,0 +1,1 @@
+(function(e){var t={id:"805ceaa9c448bedadf3647603e090387",filename:"app.js",exports:{}};if(!e.____MODULES){e.____MODULES={}}var n=function(e,t,n){alert(1)}(t.exports,t,e);e.____MODULES["805ceaa9c448bedadf3647603e090387"]=t.exports})(this)
